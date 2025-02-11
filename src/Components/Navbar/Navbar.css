@@ -1,0 +1,152 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+
+
+
+.nav-name {
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    padding: 0px 20px;
+    font-size: 55px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid #afafaf;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .nav-name {
+        font-size: 45px; /* Adjust size for tablets */
+        padding: 0px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-name {
+        font-size: 35px; /* Smaller font for mobile */
+        padding: 0px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-name {
+        font-size: 28px; /* Even smaller for very small screens */
+        padding: 0px 10px;
+        border-radius: 30px;
+    }
+}
+
+
+
+
+.nav-name:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+   
+}
+
+.nav-name img{
+    bottom: 0;
+    height: 13px;
+    cursor: pointer;
+    z-index: -1;
+}
+
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-connect{
+    padding: 20px 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.nav-connect:hover{
+    transform: scale(1.05);
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-menu li img{
+    display: flex;
+    margin: auto;
+}
+
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-mob-close{
+    display: none;
+}
+
+.nav-mob-open{
+    display: none;
+}
+
+@media(max-width:768px){
+    .navbar{
+        margin: 20px 50px;
+    }
+    .nav-connect{
+        display: none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+    }
+    .nav-mob-close{
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 290px;
+        width: 30px;
+    }
+    .nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: start;
+        top: 0px;
+        gap: 30px;
+        background-color: #1F0016;
+        width: 350px;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -350px;
+    }
+    .nav-menu li{
+        font-size: 30px;
+        padding-left: 100px;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
