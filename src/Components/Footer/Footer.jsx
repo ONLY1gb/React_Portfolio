@@ -37,7 +37,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/gautam-bhawsar-82267625b/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="social-icon" style={{color: "#0077B5", marginLeft:"20px"}} />
           </a>
-          <a href="https://www.linkedin.com/in/gautam-bhawsar-82267625b/" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ONLY1gb" target="_blank" rel="noopener noreferrer">
             <VscGithub className="social-icon" style={{color: "#ffffff", marginLeft:"20px"}} />
           </a>
         </div>
