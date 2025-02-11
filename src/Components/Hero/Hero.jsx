@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
   const handleResumeDownload = () => {
-    const resumeUrl = "/Gautam_Bhawsar_23.pdf"; // Directly referencing the file in the public folder
+    const resumeUrl = "/Gautam_Bhawsar.pdf"; 
     const link = document.createElement("a");
     link.href = resumeUrl;
     link.download = "Gautam_Bhawsar_23.pdf";
