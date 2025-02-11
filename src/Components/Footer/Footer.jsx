@@ -1,7 +1,8 @@
 import React from 'react';
 import "./Footer.css";
-import { FaInstagram, FaLinkedin } from "react-icons/fa"; // Import icons
+import { FaInstagram, FaLinkedin } from "react-icons/fa"; 
 import footer_logo from "../../assets/footer_logo.svg";
+import theme_pattern from "../../assets/theme_pattern.svg"
 import user_icon from "../../assets/user_icon.svg";
 import { VscGithub } from "react-icons/vsc";
 
@@ -10,7 +11,10 @@ const Footer = () => {
     <div id='footer' className='footer'>
       <div className="footer-top">
         <div className="footer-top-left">
-          <img src={footer_logo} alt="" />
+          <div className="nav-name1">
+                  Gautam
+                  <img src={theme_pattern} alt="" />
+                </div>
           <p>I am a frontend developer from Pune with 2 years of experience in companies like GenAI Protos.</p>
         </div>
         <div className="footer-top-right">
